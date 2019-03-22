@@ -1,0 +1,10 @@
+{
+    "name": "com.freakshowstudio.newpackage",
+    "displayName": "New Package",
+    "version": "1.0.0",
+    "unity": "2018.3",
+    "description": "Wizard to create a new package",
+    "keywords": ["new", "package", "wizard"],
+    "category": "Scripting",
+    "dependencies": {}
+}
