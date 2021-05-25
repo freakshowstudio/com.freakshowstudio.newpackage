@@ -1,5 +1,6 @@
 {
     "name": "com.freakshowstudio.newpackage.Editor",
+    "rootNamespace": "FreakshowStudio.NewPackage",
     "references": [],
     "optionalUnityReferences": [],
     "includePlatforms": [
