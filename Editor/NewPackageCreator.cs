@@ -1,5 +1,7 @@
 
+using System;
 using System.IO;
+using UnityEngine;
 
 
 namespace FreakshowStudio.NewPackage.Editor
@@ -8,11 +10,12 @@ namespace FreakshowStudio.NewPackage.Editor
     {
         private static string PackageContents(
             string identifier,
-            string name) => $@"{{
+            string name,
+            string unityVersion) => $@"{{
     ""name"": ""{identifier}"",
     ""displayName"": ""{name}"",
     ""version"": ""1.0.0"",
-    ""unity"": ""2018.3"",
+    ""unity"": ""{unityVersion}"",
     ""description"": ""A new Unity package"",
     ""keywords"": [],
     ""category"": ""Scripting"",
@@ -27,9 +30,10 @@ namespace FreakshowStudio.NewPackage.Editor
   * Initial release
 ";
 
-        private static string LicenseContent() => $@"# MIT LICENSE
+        private static string LicenseContent(
+            string year) => $@"# MIT LICENSE
 
-Copyright 2019 <Author>
+Copyright {year} <Author>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the ""Software""), to deal
@@ -159,9 +163,15 @@ A new Unity package.";
             var editorTestsAsmDefPath = Path.Combine(
                 editorTestsPath, $"{identifier}.Tests.Editor.asmdef");
 
+            var unityVersion = string.Join(
+                ".",
+                Application.unityVersion.Split('.')[..2]);
+
+            var currentYear = DateTime.Now.Year.ToString();
+
             File.WriteAllText(
                 packagePath,
-                PackageContents(identifier, name));
+                PackageContents(identifier, name, unityVersion));
 
             File.WriteAllText(
                 changelogPath,
@@ -169,7 +179,7 @@ A new Unity package.";
 
             File.WriteAllText(
                 licensePath,
-                LicenseContent());
+                LicenseContent(currentYear));
 
             File.WriteAllText(
                 readmePath,
