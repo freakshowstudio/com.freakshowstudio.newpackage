@@ -1,7 +1,7 @@
 {
     "name": "com.freakshowstudio.newpackage",
     "displayName": "Create New Package Wizard",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "unity": "2018.3",
     "description": "Wizard to create a new package",
     "keywords": [

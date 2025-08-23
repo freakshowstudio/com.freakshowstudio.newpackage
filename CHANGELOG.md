@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/freakshowstudio/com.freakshowstudio.newpackage/compare/v1.0.0...v1.1.0) (2025-08-21)
+
+
+### Features
+
+* Include updated unity version and year ([2640b1b](https://github.com/freakshowstudio/com.freakshowstudio.newpackage/commit/2640b1b151874dbfe823618a3f9a1a7fb5df8597))
+
 # 1.0.0 (2025-08-21)
 
 
