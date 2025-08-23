@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/freakshowstudio/com.freakshowstudio.newpackage/compare/v1.2.0...v1.2.1) (2025-08-23)
+
+
+### Bug Fixes
+
+* Releases trigger on main branch and manually ([fc2adf2](https://github.com/freakshowstudio/com.freakshowstudio.newpackage/commit/fc2adf2e6ef1bf2b6f6f974555300258b41c97e7))
+
 # [1.2.0](https://github.com/freakshowstudio/com.freakshowstudio.newpackage/compare/v1.1.0...v1.2.0) (2025-08-23)
 
 
