@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/freakshowstudio/com.freakshowstudio.newpackage/compare/v1.1.0...v1.2.0) (2025-08-23)
+
+
+### Features
+
+* Add possibility to set compiler flags ([d516443](https://github.com/freakshowstudio/com.freakshowstudio.newpackage/commit/d516443038508b2b0929534f8e3dd939a88e9dae))
+
 # [1.1.0](https://github.com/freakshowstudio/com.freakshowstudio.newpackage/compare/v1.0.0...v1.1.0) (2025-08-21)
 
 
