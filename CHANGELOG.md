@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/freakshowstudio/com.freakshowstudio.newpackage/compare/v1.2.1...v1.2.2) (2025-08-23)
+
+
+### Bug Fixes
+
+* Assume git uses 'main' as branch name ([54e4519](https://github.com/freakshowstudio/com.freakshowstudio.newpackage/commit/54e45197895c2245c79e45491d250b899167b385))
+
 ## [1.2.1](https://github.com/freakshowstudio/com.freakshowstudio.newpackage/compare/v1.2.0...v1.2.1) (2025-08-23)
 
 
