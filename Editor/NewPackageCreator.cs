@@ -323,7 +323,6 @@ using System.Reflection;
 on:
   push:
     branches:
-      - master
       - main
   workflow_dispatch:
 jobs:
@@ -340,7 +339,7 @@ jobs:
           extra_plugins: |
             @semantic-release/changelog
             @semantic-release/git
-          branch: master
+          branch: main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ";
