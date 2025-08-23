@@ -324,6 +324,8 @@ on:
   push:
     branches:
       - master
+      - main
+  workflow_dispatch:
 jobs:
   release:
     name: release
