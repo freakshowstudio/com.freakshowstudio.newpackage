@@ -1,19 +1,40 @@
 
+using System.Collections.Generic;
 using System.IO;
 using UnityEditor;
 using UnityEngine;
-using Directory = UnityEngine.Windows.Directory;
 
 
 namespace FreakshowStudio.NewPackage.Editor
 {
     public class NewPackageWizard : ScriptableWizard
     {
+        [Header("Package Info")]
         [SerializeField]
-        private string _packageName = "New Package";
+        [Tooltip("The author of the package")]
+        private string _packageAuthor = "Company";
 
         [SerializeField]
+        [Tooltip("Name of the new package to create")]
+        private string _packageName = "Package";
+
+        [SerializeField]
+        [Tooltip("Identifier for the new package")]
         private string _packageIdentifier = "com.company.package";
+
+        [Header("Compiler Flags")]
+        [SerializeField]
+        [Tooltip("Extra compiler flags for the package assemblies")]
+        private List<string> _compilerFlags = new()
+        {
+            "-nullable",
+            "-warnaserror",
+        };
+
+        [Header("CI")]
+        [SerializeField]
+        [Tooltip("Add files for automating releases on GitHub")]
+        private bool _useReleaseCi;
 
         [MenuItem("Assets/Create Package", false, 14560)]
         private static void ShowWizard()
@@ -24,9 +45,20 @@ namespace FreakshowStudio.NewPackage.Editor
                 "Cancel");
         }
 
+        private void OnEnable()
+        {
+            helpString =
+                "Fill in the name and identifier for the new package and " +
+                "click create to create the new package in your " +
+                "Packages folder. Select the Use Release CI checkbox if " +
+                "you want to include a GitHub workflow for automating " +
+                "releases when pushing to the main branch, for example " +
+                "for managing OpenUPM packages.";
+        }
+
         private void OnWizardCreate()
         {
-            string path = Path.GetFullPath($"Packages/{_packageIdentifier}");
+            var path = Path.GetFullPath($"Packages/{_packageIdentifier}");
             var exists = Directory.Exists(path);
 
             if (exists)
@@ -43,7 +75,13 @@ namespace FreakshowStudio.NewPackage.Editor
                 }
             }
 
-            NewPackageCreator.Create(path, _packageIdentifier, _packageName);
+            NewPackageCreator.Create(
+                path,
+                _packageIdentifier,
+                _packageName,
+                _packageAuthor,
+                _compilerFlags,
+                _useReleaseCi);
 
             AssetDatabase.Refresh();
         }
