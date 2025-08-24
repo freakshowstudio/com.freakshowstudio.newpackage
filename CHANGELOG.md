@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/freakshowstudio/com.freakshowstudio.newpackage/compare/v1.2.2...v1.2.3) (2025-08-24)
+
+
+### Bug Fixes
+
+* Resolve packages after creating new ([ae3dd89](https://github.com/freakshowstudio/com.freakshowstudio.newpackage/commit/ae3dd895935cbb3342e9ee37a543dd9b3e44a48e))
+
 ## [1.2.2](https://github.com/freakshowstudio/com.freakshowstudio.newpackage/compare/v1.2.1...v1.2.2) (2025-08-23)
 
 
