@@ -84,6 +84,7 @@ namespace FreakshowStudio.NewPackage.Editor
                 _useReleaseCi);
 
             AssetDatabase.Refresh();
+            UnityEditor.PackageManager.Client.Resolve();
         }
 
         private void OnWizardOtherButton()
