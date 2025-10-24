@@ -1,7 +1,7 @@
 {
     "name": "com.freakshowstudio.newpackage",
     "displayName": "Create New Package Wizard",
-    "version": "1.2.3",
+    "version": "1.2.4",
     "unity": "2018.3",
     "description": "Wizard to create a new package",
     "keywords": [
@@ -12,12 +12,12 @@
     "category": "Scripting",
     "dependencies": {},
     "author": {
-      "name": "Freakshow Studio AS",
-      "url": "https://github.com/freakshowstudio"
+        "name": "Freakshow Studio AS",
+        "url": "https://github.com/freakshowstudio"
     },
     "repository": {
-      "type": "git",
-      "url": "https://github.com/freakshowstudio/com.freakshowstudio.newpackage"
+        "type": "git",
+        "url": "https://github.com/freakshowstudio/com.freakshowstudio.newpackage"
     },
     "license": "MIT"
 }

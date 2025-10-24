@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/freakshowstudio/com.freakshowstudio.newpackage/compare/v1.2.3...v1.2.4) (2025-10-24)
+
+
+### Bug Fixes
+
+* Add package author ([1216013](https://github.com/freakshowstudio/com.freakshowstudio.newpackage/commit/121601314bce477859c145c9f1ec37597b62f0cf))
+
 ## [1.2.3](https://github.com/freakshowstudio/com.freakshowstudio.newpackage/compare/v1.2.2...v1.2.3) (2025-08-24)
 
 
